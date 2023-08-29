@@ -1,0 +1,56 @@
+
+#root {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.pattern {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.stars {
+  z-index: -20;
+  top: 10%;
+  position: absolute;
+}
+
+.container {
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.time .number {
+  box-shadow: 0px 10px 0px hsl(234deg 17% 12%);
+  border-radius: 10px;
+  color: hsl(345, 95%, 68%);
+  font-size: 5em;
+  background-color: hsl(236, 21%, 26%);
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time .legend {
+  margin-top: 3em;
+  color: hsl(237, 18%, 59%);
+  font-size: 12px;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+}

@@ -1,17 +1,12 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
 
+
+:root {
+  font-family: 'Red Hat Text', sans-serif;
+  font-weight: 700;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  background-color: hsl(235, 16%, 14%);
 }
 
 a {
@@ -24,16 +19,29 @@ a:hover {
 }
 
 body {
+  position: relative;
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
-  font-size: 3.2em;
+  letter-spacing: .3rem;
+  font-size: 1.2em;
   line-height: 1.1;
+  position: absolute;
+  top: 20%;
+  transition: 0.5s;
+  z-index: 100;
+  cursor: pointer;
+}
+
+h1:hover {
+  color: #fff;
+  text-shadow: 0 0 5px hsl(345, 95%, 68%), 0 0 20px hsl(345, 95%, 68%), 0 0 10px hsl(345, 95%, 68%), 0 0 50px hsl(345, 95%, 68%);
 }
 
 button {
@@ -46,13 +54,6 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
@@ -67,3 +68,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
