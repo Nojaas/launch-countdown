@@ -1,9 +1,9 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
 
-import "src/styles/countdown.css";
-import pattern from "src/assets/pattern-hills.svg";
-import stars from "src/assets/stars.svg";
+import "../styles/countdown.css";
+import pattern from "../assets/pattern-hills.svg";
+import stars from "../assets/stars.svg";
 
 class Countdown extends Component {
   constructor(props) {

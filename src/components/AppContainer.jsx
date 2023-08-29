@@ -9,7 +9,7 @@ function AppContainer() {
   };
 
   return (
-    <div>
+    <>
       <input
         className="time-input"
         type="datetime-local"
@@ -17,7 +17,7 @@ function AppContainer() {
         onChange={handleInputChange}
       />
       <CountDown deadline={inputValue} />
-    </div>
+    </>
   );
 }
 
