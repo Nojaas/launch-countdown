@@ -8,6 +8,7 @@
   height: 100%;
   width: 100%;
   justify-content: center;
+  position: relative;
 }
 
 .pattern {
@@ -82,10 +83,6 @@
   /* .time {
     width: 100%;
   } */
-
-  #root {
-    max-width: 90%;
-  }
 
   .time .number {
     font-size: 1.2em;
